@@ -28,6 +28,17 @@ class MainTest {
     }
 
 
+    @Test
+    void sumNegative() {
+        assertEquals(1, Main.sumPositive(-2, 2));
+    }
+
+    @Test
+    void sumZero(){
+        assertEquals(1, Main.sumPositive(0, 0));
+    }
+
+
 
 
     private static Stream<Arguments> provideParameters() {
